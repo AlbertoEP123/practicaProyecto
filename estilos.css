@@ -1,0 +1,123 @@
+body {
+    background-color: rgb(162, 225, 255);
+    text-align: center;
+}
+
+  
+
+/*Aqui especifico como va a ser el modal, su posicion y demas*/
+#modal {
+
+    background: rgba(158, 148, 148, 0.144);
+    color: #fff;
+    position: fixed;
+    top: -100vh;
+    height: 30vh;
+    width: 30vw;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px 18px #888888;
+    
+
+}
+
+/*Aqui centro el parrafo en el modal*/
+#modal p {
+    width: 60%;
+    height: 40%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    font-size: 1.5em;
+    text-align: center;
+  
+
+}
+
+#mostrar-modal {
+    display: none;
+}
+
+/*Para hacer que la etiqueta se muestre como un boton*/
+#mostrar-modal+label {
+    background: rgb(121, 70, 180);
+    display: table;
+    margin: auto;
+    color: #fff;
+    line-height: 2;
+    padding: 0 1em;
+    cursor: pointer;
+    border: solid 2px;
+    border-radius: 50%;
+    font-style: oblique;
+    
+}
+
+#mostrar-modal+label:hover {
+    background: #1c87e6;
+    text-transform: uppercase;
+}
+
+#mostrar-modal:checked~#modal {
+    top: 0;
+}
+
+#cerrar-modal {
+    display: none;
+}
+
+#cerrar-modal+label {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    z-index: 100;
+    color: #000000;
+    font-weight: bold;
+    cursor: pointer;
+    background: rgb(255, 0, 157);
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 50%;
+    border-style: dotted;
+    transition: all .5s;
+}
+
+#cerrar-modal+label {
+    display: none;
+}
+
+#mostrar-modal:checked~#cerrar-modal+label {
+    display: block;
+}
+
+#cerrar-modal:checked+label {
+    display: none;
+}
+
+p {
+    line-height: 12px;
+}
+
+
+div {
+    line-height: 36px;
+    border: solid 1px;
+    border-radius: 2px;
+    width: 50%;
+    margin-left: 25%;
+
+}
+
+div:active {
+    background-color: rgba(59, 248, 255, 0.596);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+p::first-letter {
+    font-size: 1.5em;
+}

@@ -1,0 +1,87 @@
+@media screen and (min-width: 30em) and (orientation: landscape) {
+    body{
+        margin: auto;
+        height: 99vh;
+        width: auto;
+        border: dotted 2px red;
+        background-color: aliceblue;
+    }
+  }
+  nav{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 10px 10px 10px;
+    border: solid 1px;
+    justify-content: center;
+    justify-content: space-around;
+    background-color: rgba(0, 255, 255, 0.568);
+  }
+  h1:hover{
+    text-transform: uppercase;
+  }
+  nav:hover{
+    background-color: bisque;
+  }
+  article{
+    margin: 10px 10px 10px 10px;
+    height: 72vh;
+    width: auto;
+    border: solid 2px;
+    text-align: center;
+  }
+  footer{
+    margin: 10px 10px 10px 10px;
+    height: 10vh;
+    width: auto;
+    border: solid 2px;
+    text-align: center;
+    background-color: aquamarine;
+  }
+  footer:hover{
+    background-color: bisque;
+  }
+  
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+
+}
+
+.box {
+    width: 21vh;
+    height: 22vh;
+    background-color: #00ff627c;
+    margin-right: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#c1{
+    background-color: goldenrod;
+   
+}
+#c2{
+    background-color: pink;
+}
+#c3{
+    background-color: rgb(16, 17, 124);
+   
+}
+#c4{
+    background-color: orange;
+   
+}
+#c5{
+    background-color: magenta;
+   
+}
+  
